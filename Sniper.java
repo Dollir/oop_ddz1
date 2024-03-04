@@ -1,4 +1,4 @@
-public class Sniper extends BaseHero {
+public class Sniper extends BasedHero {
 
     /**
      * Снайпер

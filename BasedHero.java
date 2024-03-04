@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class BaseHero {
+public abstract class BasedHero {
     private int attack;
     private int defense;
     private int shots;
@@ -15,7 +15,7 @@ public abstract class BaseHero {
     private boolean isDead;
     private String state;
 
-    public BaseHero(String name) {
+    public BasedHero(String name) {
         super(name);
         this.attack = 8;
         this.defense = 3;
@@ -30,7 +30,7 @@ public abstract class BaseHero {
         this.state = "Stand";
     }
 
-    public BaseHero(String name, int attack, int defense, int shots, int minDamage, int maxDamage, int health,
+    public BasedHero(String name, int attack, int defense, int shots, int minDamage, int maxDamage, int health,
             int speed, int delivery, int magic) {
         super(name);
         this.attack = attack;
@@ -134,7 +134,7 @@ public abstract class BaseHero {
                 this.getDelivery(), this.getMagic());
     }
 
-    public BaseHero(String name, int x, int y) {
+    public BasedHero(String name, int x, int y) {
         this.name = name;
         this.coord = new Coord(x, y);
     }
